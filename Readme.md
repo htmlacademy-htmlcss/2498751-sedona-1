@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Варвара](https://up.htmlacademy.ru/htmlcss-individual/1/user/2498751).
-* Наставник: `Неизвестно`.
+* Наставник: [Андрей Устименко](https://htmlacademy.ru/profile/spiritmoon).
 
 ---
 
