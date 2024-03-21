@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
@@ -13,29 +12,29 @@
         <img src="images/logo.svg" width="140" height="70" alt="Логотип сайта города Седона">
       </a>
       <nav class="navigation">
-        <ul class="navigation-list">
+        <ul class="list-reset navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="index.html">Главная</a>
+            <a class="link navigation-link navigation-link-current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">О Седоне</a>
+            <a class="link navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class=" link navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
       </nav>
       <div class="additional-functions">
-        <a class="additional-functions-link additional-functions-link-search" href="#">
+        <a class="link additional-functions-link additional-functions-link-search" href="#">
           <span class="visually-hidden">
             Поиск
           </span>
         </a>
-        <a class="additional-functions-link additional-functions-link-favourites" href="#">
+        <a class="link additional-functions-link additional-functions-link-favourites" href="#">
           <span class="visually-hidden">Избранное</span>
           <span class="notification-badge">12</span>
         </a>
-        <a class="additional-functions-link additional-functions-link-wannahere" href="#">Хочу сюда!</a>
+        <a class="link additional-functions-link additional-functions-link-wannahere" href="#">Хочу сюда!</a>
       </div>
     </header>
 
@@ -54,21 +53,21 @@
       </section>
 
       <section class="advantages">
-        <ul class="advantages-list">
+        <ul class="list-reset advantages-list">
           <li class="advantages-item advantages-item-wide">
             <h3>Настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
           <li><img src="images/photo-1.jpg" width="800" height="385" alt="Фото городка Седона"></li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-light">
             <h3>Небольшая площадь</h3>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-road">
             <h3>Красивая дорога</h3>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-light">
             <h3>Мало туристов</h3>
             <p>Большинство едет в Гранд Каньон и толпится там</p>
           </li>
@@ -87,16 +86,16 @@
         <p class="description">Опытный персонал и качественное обслуживание!</p>
       </section>
       <section class="advantages">
-        <ul class="advantages-list">
-          <li class="advantages-item">
+        <ul class="list-reset advantages-list">
+          <li class="advantages-item advantages-item-light">
             <h3>Жилье</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-food">
             <h3>Еда</h3>
             <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
-          <li class="advantages-item">
+          <li class="advantages-item advantages-item-light">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -108,7 +107,7 @@
 
         <p class="description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в
           Седоне</p>
-        <a class="hotel-search-link" href="catalog.html">Поиск гостиницы в Седоне</a>
+        <a class="link hotel-search-link" href="catalog.html">Поиск гостиницы в Седоне</a>
       </section>
 
       <section class="subscription">
@@ -116,8 +115,8 @@
 
         <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email">
-          <button class="button button-blue" type="submit">
+          <input class="email-field" placeholder="Ваш e-mail" type="email" name="newsletter-email">
+          <button class="button button-big-primary" type="submit">
             Подписаться
           </button>
         </form>
@@ -125,25 +124,25 @@
     </main>
 
     <footer class="page-footer">
-      <ul class="footer-social-list">
+      <ul class="list-reset footer-social-list">
         <li class="footer-social-item">
-          <a class="button" href="https://vk.com/htmlacademy">
+          <a class="link social-icon-link" href="https://vk.com/htmlacademy">
             <span class="visually-hidden">ВКонтакте</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://t.me/htmlacademy">
+          <a class="link social-icon-link" href="https://t.me/htmlacademy">
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="https://www.youtube.com/user/htmlacademyru">
+          <a class="link social-icon-link" href="https://www.youtube.com/user/htmlacademyru">
             <span class="visually-hidden">Youtube</span>
           </a>
         </li>
       </ul>
-      <a class="footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/logo-academy.svg" width="115"
+      <a class="link footer-contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="link htmlacademy-link" href="https://htmlacademy.ru/"><img src="images/logo-academy.svg" width="115"
           height="33" alt="Лого HTML академии"></a>
     </footer>
   </body>
