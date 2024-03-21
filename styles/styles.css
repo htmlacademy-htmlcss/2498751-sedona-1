@@ -15,10 +15,10 @@
 }
 
 :root {
-  --font-giga-bold: 700 60px/78px "PT Sans", sans-serif;
-  --font-mega: 400 40px/40px "PT Sans", sans-serif;
-  --font-kilo-bold: 700 30px/36px "PT Sans", sans-serif;
-  --font-xxlarge-bold:  700 24px/28px "PT Sans", sans-serif;
+  --font-header-xlarge: 700 60px/78px "PT Sans", sans-serif;
+  --font-header-large: 400 40px/40px "PT Sans", sans-serif;
+  --font-header-medium: 700 30px/36px "PT Sans", sans-serif;
+  --font-header: 700 24px/28px "PT Sans", sans-serif;
   --font-xlarge: 400 22px/26px "PT Sans", sans-serif;
   --font-large-high-bold: 700 20px/36px "PT Sans", sans-serif;
   --font-large-low-bold: 700 20px/24px "PT Sans", sans-serif;
@@ -64,21 +64,21 @@ body {
   list-style: none;
 }
 
+.link {
+  text-decoration: none;
+}
+
 .navigation-link {
   font: var(--font-large-low-bold);
-  font-style: normal;
   text-align: center;
   text-transform: capitalize;
-  text-decoration: none;
   color: #000000;
   background-color: #FFFFFF;
 }
 
 .additional-functions-link {
   font: var(--font-large-low-bold);
-  font-style: normal;
   text-align: center;
-  text-decoration: none;
   color: #000000;
   background-color: #FFFFFF;
 }
@@ -86,7 +86,6 @@ body {
 .notification-badge {
   font: var(--font-micro);
   text-align: center;
-  font-style: normal;
   color: #FFFFFF;
   background-color: #7DB54F;
   border-radius: 50%;
@@ -94,7 +93,6 @@ body {
 
 .additional-functions-link-wannahere {
   font: var(--font-mini-bold);
-  font-style: normal;
   text-align: center;
   text-transform: uppercase;
   color: #FFFFFF;
@@ -116,15 +114,13 @@ body {
 
 .lead,
 .lead-searching {
-  font: var(--font-kilo-bold);
-  font-style: normal;
+  font: var(--font-header-medium);
   text-transform: uppercase;
   color: #000000;
 }
 
 .description {
   font: var(--font-xlarge);
-  font-style: normal;
 }
 
 .advantages-list {
@@ -136,10 +132,7 @@ body {
   background-color: #82B3D3;
 }
 
-.advantages-item-square,
-.advantages-item-tourist,
-.advantages-item-accomodation,
-.advantages-item-souvenirs {
+.advantages-item-light {
   color: #333333;
   background-color: rgba(131, 179, 211, 0.12);
 }
@@ -155,8 +148,7 @@ body {
 }
 
 .advantages-item h3 {
-  font: var(--font-xxlarge-bold);
-  font-style: normal;
+  font: var(--font-header);
   text-transform: uppercase;
   color: #000000;
 }
@@ -170,12 +162,10 @@ body {
 .hotel-search {
   font: var(--font-xlarge);
   text-align: center;
-  font-style: normal;
 }
 
 .hotel-search h2 {
-  font: var(--font-kilo-bold);
-  font-style: normal;
+  font: var(--font-header-medium);
   text-transform: uppercase;
   color: #000000;
 }
@@ -183,9 +173,7 @@ body {
 .hotel-search-link {
   font: var(--font-large-high-bold);
   text-align: center;
-  font-style: normal;
   text-transform: uppercase;
-  text-decoration: none;
   color: #FFFFFF;
   background-color: #756157
 }
@@ -194,7 +182,6 @@ body {
 
 .subscription {
   font: var(--font-xlarge);
-  font-style: normal;
   color: #FFFFFF;
   text-align: center;
   background-image: url("../images/subscribe-background.jpg");
@@ -204,20 +191,17 @@ body {
 }
 
 .subscription h2 {
-  font: var(--font-kilo-bold);
-  font-style: normal;
+  font: var(--font-header-medium);
   text-transform: uppercase;
   color: #FFFFFF;
 }
 
-.field {
+.email-field {
   font: var(--font-base-high);
-  font-style: normal;
 }
 
 .button-big-primary {
   font: var(--font-large-high-bold);
-  font-style: normal;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -231,17 +215,13 @@ body {
 
 .footer-social-item a {
   font: var(--font-large-low-bold);
-  font-style: normal;
-  text-decoration: none;
   color: #000000;
 }
 
 .footer-contacts-phone {
-  font: var(--font-mega);
+  font: var(--font-header-large);
   text-align: center;
-  font-style: normal;
   text-transform: uppercase;
-  text-decoration: none;
   color: #000000;
 }
 
@@ -257,15 +237,12 @@ body {
 }
 
 .hotel-catalog-title {
-  font: var(--font-giga-bold);
-  font-style: normal;
+  font: var(--font-header-xlarge);
   color: #FFFFFF;
 }
 
 .breadcrumbs-link {
   font: var(--font-small-high);
-  font-style: normal;
-  text-decoration: none;
   color: #FFFFFF;
 }
 
@@ -273,21 +250,18 @@ body {
 
 .catalog-filter-title {
   font: var(--font-large-low-bold);
-  font-style: normal;
   text-transform: capitalize;
   color: #FFFFFF;
 }
 
 .control-input {
   font: var(--font-base-average);
-  font-style: normal;
   color: #FFFFFF;
 }
 
 .button-small-primary,
 .button-favourite {
   font: var(--font-small-low-bold);
-  font-style: normal;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: #82B3D3;
@@ -295,7 +269,6 @@ body {
 
 .button-transparent {
   font: var(--font-small-low-bold);
-  font-style: normal;
   text-transform: uppercase;
   color: #FFFFFF;
   background-color: transparent;
@@ -308,26 +281,20 @@ body {
 }
 
 .product-card-link {
-  font: var(--font-xxlarge-bold);
-  font-style: normal;
-  text-decoration: none;
+  font: var(--font-header);
   color: #000000;
 }
 
-.button-details {
+.link-details {
   font: var(--font-small-low-bold);
-  font-style: normal;
   text-transform: uppercase;
-  text-decoration: none;
   color: #FFFFFF;
   background-color: #756157;
 }
 
 .button-favourite-current {
   font: var(--font-small-low-bold);
-  font-style: normal;
   text-transform: uppercase;
-  text-decoration: none;
   color: #FFFFFF;
   background-color: #7DB54F;
 }
@@ -340,13 +307,12 @@ body {
 
 .pagination-link {
   font: var(--font-large-high-bold);
-  font-style: normal;
-  text-decoration: none;
   color: #FFFFFF;
   background-color: #82B3D3;
 }
 
-.pagination-current {
+.pagination-link-current {
+  font: var(--font-large-high-bold);
   color: #000000;
   background-color: #F2F2F2;
 }
@@ -355,14 +321,12 @@ body {
 
 .hotel-catalog-subscription {
   font: var(--font-xlarge);
-  font-style: normal;
   color:#333333;
   text-align: center;
 }
 
 .hotel-catalog-subscription h2 {
-  font: var(--font-kilo-bold);
-  font-style: normal;
+  font: var(--font-header-medium);
   text-transform: uppercase;
   color:#000000;
 }
