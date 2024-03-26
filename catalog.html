@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
@@ -133,23 +134,27 @@
         <section class="searching-results">
           <h2 class="visually-hidden">Результаты поиска</h2>
 
-          <div class="lead lead-searching">Найдено гостиниц:
-            <span class="searching-results searching-results-number">38</span>
+          <div class="sorting">
+            <div class="lead lead-searching">Найдено гостиниц:
+              <span class="searching-results-number">38</span>
+            </div>
+            <select class="select-sorting" aria-label="Сортировка">
+              <option value="price">По цене</option>
+              <option value="type">По типу</option>
+              <option value="rate">По рейтингу</option>
+            </select>
+            <div class="display-switcher">
+              <button class="button button-sorting current" type="button">
+                <span class="visually-hidden">Показать карточки</span>
+              </button>
+              <button class="button button-sorting" type="button">
+                <span class="visually-hidden">Показать карточку</span>
+              </button>
+              <button class="button button-sorting" type="button">
+                <span class="visually-hidden">Показать список</span>
+              </button>
+            </div>
           </div>
-          <select class="select-sorting" aria-label="Сортировка">
-            <option value="popular">По цене</option>
-            <option value="cheap">По типу</option>
-            <option value="expensive">По рейтингу</option>
-          </select>
-          <button class="button button-sorting current" type="button">
-            <span class="visually-hidden">Показать карточки</span>
-          </button>
-          <button class="button button-sorting" type="button">
-            <span class="visually-hidden">Показать карточку</span>
-          </button>
-          <button class="button button-sorting" type="button">
-            <span class="visually-hidden">Показать список</span>
-          </button>
           <ul class="list-reset product-list">
             <li>
               <article class="product-card">
@@ -278,7 +283,7 @@
         <section class="hotel-catalog-subscription">
           <h2>Подпишитесь на рассылку</h2>
 
-          <p class="description">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <p class="description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email">
             <button class="button button-big-primary" type="submit">
