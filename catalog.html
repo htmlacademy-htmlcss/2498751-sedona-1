@@ -145,14 +145,14 @@
               <option value="type">По типу</option>
               <option value="rate">По рейтингу</option>
             </select>
-            <div class="display-switcher">
-              <button class="button button-sorting current" type="button">
+            <div class="display-types">
+              <button class="button display-type dipslay-type-cards current" type="button">
                 <span class="visually-hidden">Показать карточки</span>
               </button>
-              <button class="button button-sorting" type="button">
+              <button class="button display-type display-type-card" type="button">
                 <span class="visually-hidden">Показать карточку</span>
               </button>
-              <button class="button button-sorting" type="button">
+              <button class="button display-type display-type-list" type="button">
                 <span class="visually-hidden">Показать список</span>
               </button>
             </div>
@@ -262,7 +262,7 @@
 
           <ol class="list-reset pagination">
             <li class="pagination-item">
-              <a class="link pagination-link-current">1</a>
+              <a class="link pagination-link pagination-link-current">1</a>
             </li>
             <li class="pagination-item">
               <a class="link pagination-link" href="#">2</a>
@@ -274,7 +274,7 @@
               <a class="link pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="link pagination-link" href="#">...</a>
+              <a class="link pagination-link pagination-link-interval" href="#">...</a>
             </li>
             <li class="pagination-item">
               <a class="link pagination-link" href="#">10</a>
@@ -285,7 +285,7 @@
         <section class="hotel-catalog-subscription">
           <h2>Подпишитесь на рассылку</h2>
 
-          <p class="description">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+          <p class="description description-hotel-catalog-subscription">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
           <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
             <input class="field" placeholder="Ваш e-mail" type="email" name="newsletter-email">
             <button class="button button-big-primary" type="submit">
