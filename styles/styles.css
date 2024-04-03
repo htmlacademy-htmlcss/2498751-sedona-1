@@ -410,8 +410,8 @@ figure {
 }
 
 .button-small-primary {
-  max-width: 190px;
-  padding: 8px 50px;
+  min-width: 190px;
+  padding: 8px;
 }
 
 .button-transparent {
@@ -449,6 +449,7 @@ figure {
 .searching-results {
   padding: 50px 70px 60px;
 }
+
 /*
 .product-list {
   display: flex;
@@ -496,7 +497,6 @@ figure {
 }
 
 .link-details {
-  display: block;
   padding: 8px 24px;
   width: 140px;
   font: var(--font-small-low-bold);
@@ -507,13 +507,11 @@ figure {
 }
 
 .button-favourite {
-  display: block;
-  padding: 8px 20px;
+  padding: 8px;
   width: 140px;
 }
 
 .button-favourite-current {
-  padding: 8px 20px;
   font: var(--font-small-low-bold);
   text-transform: uppercase;
   color: #FFFFFF;
