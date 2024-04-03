@@ -494,13 +494,15 @@ figure {
 .rate-container {
   display: flex;
   justify-content: space-between;
+  gap: 20px;
 }
 
 .link-details {
-  padding: 8px 24px;
-  width: 140px;
+  padding: 8px;
+  flex-basis: 50%;
   font: var(--font-small-low-bold);
   text-transform: uppercase;
+  text-align: center;
   border-radius: 4px;
   color: #FFFFFF;
   background-color: #756157;
@@ -508,7 +510,7 @@ figure {
 
 .button-favourite {
   padding: 8px;
-  width: 140px;
+  flex-basis: 50%;
 }
 
 .button-favourite-current {
