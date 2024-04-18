@@ -208,20 +208,21 @@
             <div class="modal-field">
               <label class="modal-field-label" for="check-in">Дата заезда:</label>
               <input class="modal-field-input" type="text" id="check-in" name="check-in" value="27 апреля 2020"
-                required>
+                required placeholder="Укажите дату">
               <span class="modal-field-notice error">Мы не можем отправить вас в прошлое.</span>
             </div>
 
             <div class="modal-field">
               <label class="modal-field-label" for="check-out">Дата выезда:</label>
               <input class="modal-field-input" type="text" id="check-out" name="check-out" value="1 сентября 2023"
-                required>
+                required placeholder="Укажите дату">
               <span class="modal-field-notice">На эти даты есть свободные номера. Пока есть.</span>
             </div>
 
             <div class="modal-counter-wrapper">
               <div class="modal-counter">
                 <label class="modal-counter-label" for="adults">Взрослые:</label>
+                <div class="modal-button-wrapper">
                 <button class="button modal-button modal-button-min" type="button">
                   <span class="visually-hidden">Убавить количество взрослых</span>
                 </button>
@@ -230,8 +231,10 @@
                   <span class="visually-hidden">Прибавить количество взрослых</span>
                 </button>
               </div>
+              </div>
 
               <div class="modal-counter">
+                <div class="modal-counter-kids-wrapper">
                 <label class="modal-counter-label modal-counter-label-tooltip" for="kids">Дети:</label>
                 <span class="modal-tooltip">
                   <button class="button modal-button modal-button-info" type="button"
@@ -240,6 +243,8 @@
                   <span class="modal-tooltip-text" role="tooltip" id="modal-tooltip-label">Укажите количество детей,
                     которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
                 </span>
+              </div>
+                <div class="modal-button-wrapper">
                 <button class="button modal-button modal-button-min" type="button">
                   <span class="visually-hidden">Убавить количество детей</span>
                 </button>
@@ -247,6 +252,7 @@
                 <button class="button modal-button modal-button-plus" type="button">
                   <span class="visually-hidden">Прибавить количество детей</span>
                 </button>
+              </div>
               </div>
             </div>
             <button class="button button-primary modal-button-search" type="submit">Найти</button>
