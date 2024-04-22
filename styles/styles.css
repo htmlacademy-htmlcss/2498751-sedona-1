@@ -95,6 +95,13 @@ button {
   color: #FFFFFF;
 }
 
+input:not(:placeholder-shown):focus {
+  background-color: #F2F2F2;
+  color:#000;
+  outline: 2px solid #000000;
+  outline-offset: -2px;
+  }
+
 h1,
 h2,
 h3 {
@@ -189,6 +196,15 @@ fieldset {
   bottom: -1px;
   height: 2px;
   background-color: #756257;
+}
+
+.navigation-link:hover,
+.navigation-link:focus {
+  color: #756157;
+}
+
+.navigation-link:active {
+  color: rgba(117, 97, 87, 0.3);
 }
 
 .additional-functions {
@@ -520,32 +536,30 @@ fieldset {
 }
 
 .footer-social-link {
-  display: block;
-  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   min-width: 48px;
   min-height: 40px;
-  /* color:#82B3D3; */
+  color:#82B3D3;
 }
 
-.social-icon {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  fill: #83B3D3;
-}
-
-.social-icon:hover,
+.footer-social-link:hover,
 .footer-social-link:focus {
-  fill: #68A2CA;
+  color: #68A2CA;
 }
 
 .footer-social-link:active {
-  fill: rgba(104, 162, 202, 0.3);
+ color: rgba(104, 162, 202, 0.3);
+}
+
+.footer-phone-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 1;
 }
 
 .footer-contacts-phone {
-  flex: 1;
   font: var(--font-header-large);
   text-align: center;
   text-transform: uppercase;
@@ -768,17 +782,18 @@ fieldset {
   border: 2px solid #E5E5E5;
 }
 
-.display-type:nth-child(1) {
+.display-type.current {
   border-color: #000000;
 }
 
 .display-type:hover,
-.display-type:active {
+.display-type:focus {
   border-color: #000000;
 }
 
-.display-type:focus {
+.display-type:focus-visible {
   border-color: #68A2CA;
+  outline: none;
 }
 
 /* SEARCHING-RESULTS */
@@ -1008,9 +1023,8 @@ fieldset {
   background: #E6E6E6;
 }
 
-.range-input:active {
-  outline: 2px solid #000;
-  background: #F2F2F2;
+.range-input:placeholder-shown {
+  color: #000;
 }
 
 .range-toggle {
@@ -1149,9 +1163,9 @@ fieldset {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-.modal-container-hidden {
+/* .modal-container-hidden {
   display: none;
-}
+} */
 
 .modal-booking {
   position: relative;
@@ -1229,7 +1243,6 @@ fieldset {
   background-image: url("../images/date.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
-  cursor: pointer;
 }
 
 .modal-field-input:hover {
@@ -1240,12 +1253,6 @@ fieldset {
 .modal-field-input:focus {
   background-color: #E6E6E6;
   outline: 3px solid #83B3D3;
-}
-
-.modal-field-input:active {
-  outline: 2px solid #000;
-  background-color: #F2F2F2;
-  color: #000;
 }
 
 .modal-field-input:disabled {
@@ -1357,7 +1364,6 @@ fieldset {
   width: 27px;
   height: 27px;
   border-radius: 50%;
-  cursor: pointer;
 }
 
 .modal-tooltip {
@@ -1420,10 +1426,4 @@ fieldset {
 
 .modal-field-input:placeholder-shown {
   color:rgba(0, 0, 0, 0.6);
-}
-
-input:not(:placeholder-shown):focus {
-background-color: #F2F2F2;
-color:#000;
-outline: 2px solid #000000;
 }
