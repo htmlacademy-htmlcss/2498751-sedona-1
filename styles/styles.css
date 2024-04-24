@@ -31,7 +31,9 @@
   --font-micro: 400 10px/10px "PT Sans", sans-serif;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
