@@ -58,7 +58,7 @@
           <div class="catalog-wrapper">
 
             <section class="hotel-catalog-hero">
-              <h1 class="hotel-catalog-title">Гостиницы Седоны</h1>
+              <h1 class="gap-reset hotel-catalog-title">Гостиницы Седоны</h1>
 
               <nav>
                 <ol class="list-reset breadcrumbs">
@@ -78,11 +78,11 @@
 
               <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
                 <div class="hotel-options">
-                  <fieldset class="catalog-filter-group">
+                  <fieldset class="fieldset-reset catalog-filter-group">
                     <legend class="catalog-filter-title">Инфраструктура</legend>
                     <ul class="list-reset catalog-filter-list">
                       <li class="catalog-filter-item">
-                        <label class="control">
+                        <label class="filter-control">
                           <input class="visually-hidden control-input" type="checkbox" name="facilities" checked
                             value="Бассейн">
                           <span class="control-mark"></span>
@@ -90,7 +90,7 @@
                         </label>
                       </li>
                       <li class="catalog-filter-item">
-                        <label class="control">
+                        <label class="filter-control">
                           <input class="visually-hidden control-input" type="checkbox" name="facilities" checked
                             value="Парковка">
                           <span class="control-mark"></span>
@@ -98,7 +98,7 @@
                         </label>
                       </li>
                       <li class="catalog-filter-item">
-                        <label class="control">
+                        <label class="filter-control">
                           <input class="visually-hidden control-input" type="checkbox" name="facilities" value="Wi-Fi">
                           <span class="control-mark"></span>
                           <span class="control-label">Wi-Fi</span>
@@ -107,11 +107,11 @@
                     </ul>
                   </fieldset>
 
-                  <fieldset class="catalog-filter-group">
+                  <fieldset class="fieldset-reset catalog-filter-group">
                     <legend class="catalog-filter-title">Тип Жилья</legend>
                     <ul class="list-reset catalog-filter-list">
                       <li class="catalog-filter-item">
-                        <label class="control">
+                        <label class="filter-control">
                           <input class="visually-hidden control-input" type="radio" name="product-group" value="Hotel"
                             checked>
                           <span class="control-mark control-mark-radio"></span>
@@ -119,14 +119,14 @@
                         </label>
                       </li>
                       <li class="catalog-filter-item">
-                        <label class="control">
+                        <label class="filter-control">
                           <input class="visually-hidden control-input" type="radio" name="product-group" value="Motel">
                           <span class="control-mark control-mark-radio"></span>
                           <span class="control-label control-label-radio">Мотель</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item">
-                        <label class="control">
+                        <label class="filter-control">
                           <input class="visually-hidden control-input" type="radio" name="product-group"
                             value="Apartments">
                           <span class="control-mark control-mark-radio"></span>
@@ -137,15 +137,15 @@
                   </fieldset>
                 </div>
                 <div class="hotel-options">
-                  <fieldset class="price-filter">
+                  <fieldset class="fieldset-reset price-filter">
                     <legend class="catalog-filter-title">Стоимость, ₽:</legend>
                     <div class="range-inputs-wrapper">
                       <label class="catalog-filter-label">
-                        <input class="range-input range-input-min" type="number" placeholder="0" name="min-price">
+                        <input class="range-input range-input-min" type="number" value="" placeholder="0" name="min-price">
                         <span>от</span>
                       </label>
                       <label class="catalog-filter-label">
-                        <input class="range-input range-input-max" type="number" placeholder="9000" name="max-price">
+                        <input class="range-input range-input-max" type="number" value="" placeholder="9000" name="max-price">
                         <span>до</span>
                       </label>
                     </div>
@@ -234,7 +234,7 @@
               <li>
                 <article class="product-card">
                   <a class="link product-card-link" href="#">
-                    <figure>
+                    <figure class="gap-reset">
                       <img class="product-card-image" src="images/catalog/AmaraResort&Spa.jpg" width="300" height="212"
                         alt="Amara Resort & Spa">
                       <figcaption>Amara Resort & Spa</figcaption>
@@ -265,7 +265,7 @@
               <li>
                 <article class="product-card">
                   <a class="link product-card-link" href="#">
-                    <figure>
+                    <figure class="gap-reset">
                       <img class="product-card-image" src="images/catalog/VillasatPocoDiablo.jpg" width="300"
                         height="212" alt="Villas at Poco Diablo">
                       <figcaption>Villas at Poco Diablo</figcaption>
@@ -297,7 +297,7 @@
               <li>
                 <article class="product-card">
                   <a class="link product-card-link" href="#">
-                    <figure>
+                    <figure class="gap-reset">
                       <img class="product-card-image" src="images/catalog/DesertQuailInn.jpg" width="300" height="212"
                         alt="Desert Quail Inn">
                       <figcaption>Desert Quail Inn</figcaption>
@@ -327,7 +327,7 @@
               <li>
                 <article class="product-card">
                   <a class="link product-card-link" href="#">
-                    <figure>
+                    <figure class="gap-reset">
                       <img class="product-card-image" src="images/catalog/GreenTreeInn.jpg" width="300" height="212"
                         alt="GreenTree Inn">
                       <figcaption>GreenTree Inn</figcaption>
@@ -378,9 +378,9 @@
           </section>
 
           <section class="hotel-catalog-subscription">
-            <h2>Подпишитесь на рассылку</h2>
+            <h2 class="gap-reset">Подпишитесь на рассылку</h2>
 
-            <p class="description description-hotel-catalog-subscription">Только полезная информация и никакого спама,
+            <p class="gap-reset description description-hotel-catalog-subscription">Только полезная информация и никакого спама,
               <br> честное бойскаутское!
             </p>
             <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
