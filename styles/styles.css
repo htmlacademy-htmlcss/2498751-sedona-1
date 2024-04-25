@@ -433,7 +433,7 @@ img {
 .advantages-img {
   display: block;
   object-fit: cover;
-  max-width: 100%;
+  height: 100%;
 }
 
 .advantages-item-light {
